@@ -1,0 +1,37 @@
+{
+    // ===== Language Server (svls) =====
+    "verilog.languageServer.svls.path": "/home/ita/.cargo/bin/svls",
+    "verilog.languageServer.svls.enabled": true,
+    // ===== Verilator Lint =====
+    "verilog.linting.linter": "verilator",
+    "verilog.linting.verilator.path": "verilator",
+    "verilog.linting.verilator.arguments": "--lint-only -Wall --sv",
+    "verilog.linting.verilator.runOnSave": true,
+    "verilog.linting.verilator.runOnOpen": true,
+    // ===== Verible Formatter =====
+    "editor.formatOnSave": true,
+    "[systemverilog]": {
+        "editor.defaultFormatter": "mshr-h.veriloghdl"
+    },
+    "[verilog]": {
+        "editor.defaultFormatter": "mshr-h.veriloghdl"
+    },
+    // Verible formatter executable
+    "verilog.formatting.veribleVerilogFormatter.path": "/home/ita/tools/verible-v0.0-4296-g0f262651/bin/verible-verilog-format",
+    // IMPORTANT: arguments is a STRING, not an array
+    "verilog.formatting.veribleVerilogFormatter.arguments": "--flagfile=/home/ita/git_repo/.verilog_format",
+    // ===== 補完・サジェスト設定 =====
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggest.showWords": true,
+    "editor.suggest.showSnippets": true,
+    "editor.suggest.showClasses": true,
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "on"
+    },
+    "editor.rulers": [
+        120
+    ],
+    "editor.wordWrap": "off"
+}
